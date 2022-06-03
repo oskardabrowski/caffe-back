@@ -37,7 +37,7 @@ app.post("/mail-to-shop", async (req, res) => {
   async function main() {
     let transporter = nodemailer.createTransport({
       host: "smtp.mailtrap.io",
-      port: port,
+      port: 2525,
       auth: {
         user: "fd052cb1d12057",
         pass: "c8a4c4b2246297",
@@ -79,7 +79,7 @@ app.post("/mail-contact", async (req, res) => {
   async function main() {
     let transporter = nodemailer.createTransport({
       host: "smtp.mailtrap.io",
-      port: port,
+      port: 2525,
       auth: {
         user: "fd052cb1d12057",
         pass: "c8a4c4b2246297",
