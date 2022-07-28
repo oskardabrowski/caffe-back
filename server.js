@@ -5,6 +5,7 @@ const stripe = require("stripe")(
 );
 const nodemailer = require("nodemailer");
 
+app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 
